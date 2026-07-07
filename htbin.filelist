@@ -1,0 +1,22 @@
+* © Copyright 1995, Richard M. Troth, all rights reserved.   <plaintext>
+*
+*         Name: HTBIN FILELIST
+*
+*         Note: Because this menu is defined by a FILELIST instead of
+*               by an SFS sub-directory,  you can hide the contents
+*               from "surfers" by the presence of your INDEX HTML.
+*               INDEX HTML (if it exists) will always be served out
+*               instead of an auto-index of this FILELIST.
+*
+      POSTTEST *CGI     *
+      CMSHELP  *CGI     *
+      CPQ      *CGI     *
+      FINGER   *CGI     *
+      IMAGEMAP *CGI     *
+      NAMEFIND *CGI     *
+      R005     *CGI     *
+      R010     *CGI     *
+      DARWIN   *CGI     *
+      DARSUPD  *CGI     *
+      YOUTRYIT *CGI     *
+*

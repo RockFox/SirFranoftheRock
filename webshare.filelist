@@ -1,0 +1,130 @@
+* © Copyright 1995, Richard M. Troth, all rights reserved.   <plaintext>
+*
+*         Name: WEBSHARE FILELIST
+*               This is my personal WEBSHARE FILELIST.
+*               You shouldn't have it.   It has been included
+*               in the CMS HTTPD package by mistake.   Please tell me.
+*         Date: 1994-Oct-12
+*
+*     fn       ft       fm path     name
+*     xxxxxxxx xxxxxxxx xx xxxxxxxx "xxxxxxxx"
+      index    html     *
+      HTBIN    *        *
+      gss      xsl      *
+      sitemap  xml      *
+      urllist  txt      *
+*
+*
+*  BobSmith.jpg is used for AnnFund Summer 2004 mailing
+      ooma     rexg     *
+      BobSmith jpg      *
+      BobSig   jpg      *
+      waterloo txt      *
+      PARENTS  HTML     *
+      HENSLER  GIF      *
+      HENSLER  JPG      *
+      zvm_fran jpg      *
+      rock_mag pdf      *
+      emer_crt jpg      *
+      emer_let jpg      *
+      sru      gif      *
+      sru45    html     *
+      sru50    html     *
+      sru45_5  jpg      *
+      sirfran  jpg      *
+      sir_cert jpg      *
+      1994OUT2 JPG      *
+      1994OUT1 JPG      *
+      1984COMM JPG      *
+      1967YRBK JPG      *
+      goodnews html     *
+      MOTHER   jpg      *
+      DAD      jpg      *
+      bahr     jpg      *
+      mike     jpg      *
+      VMXPRT   JPG      *
+      VM1      GIF      *
+      email1   gif      *
+      FJH3     GIF      *
+      FJH4     GIF      *
+      FJH5     GIF      *
+      FRAN80   JPG      *
+      PBS390A  GIF      *
+      VMW3     GIF      *
+      POWERzVM JPG      *
+      ICCPLOGO JPG      *
+      VMBEAR   GIF      *
+      T-REX    GIF      *
+      ANTHONY  HTML     *
+      PETER    HTML     *
+      ANTHONY  GIF      *
+      PETER    GIF      *
+      ACHURCH  JPEG     *
+      PCHURCH  JPEG     *
+      HOWCOUNT TXT      *
+      R004     HTML     *
+      R005     HTML     *
+      R005TEST HTML     *
+      R010     HTML     *
+      FORMS    HTML     *
+      FILMS    XML      *
+      OLDJOKE  XML      *
+*
+*  Following are for history of computing at SRU
+*
+      WATFILE  HTML     *
+      1963srsc jpg      *
+*
+      TROTHNEW GIF      *
+*
+* THREE PATHS TO THE SAME PLACE:
+      RICKVMSW *        *
+      RICKVMSW *        *  MISCVMSW
+      RICKVMSW *        *  SOFTWARE
+*
+* OTHER SUB-MENUS (PSEUDO SUB-DIRECTORIES):
+      IMAGES   *        *
+      SOUNDS   *        *
+      HTML     *        *
+*
+* A HOTLIST:
+      TROTHHOT *LINK    *
+      YESIHAVE *LINK    *
+*
+      LISTSERV REFCARD  *
+*
+      YOUTRYIT *CGI     *
+      CPQ      *CGI     *
+      POSTMAIL *CGI     *
+*
+      WEBSHARE FILELIST *           "THE FILE THAT DEFINES THIS MENU"
+*
+      EBCDIC   HTML     *   EBCDIC_IS_OKAY
+      REBCIDIC GIF      *   RAW-EBCIDIC.GIF
+      WHYVM    HTML     *
+      DTWMAF   HTML     *
+*
+      TESTHTML HTML     *
+*
+      TROTHMAP IMAGEMAP *
+      TROTHBC2 MAP      *
+*
+      TNBCGOV  TXT      *
+      COLSON94 HTML     *
+*
+      ENG3341I HTML     *
+      ENG3341I HTML     *  TROTHRES.HTML
+      PROPOSAL HTML     *
+*     FEATURES HTML     *
+*
+      RMT192XP VMARC    *
+*
+      VMHISTOR LISTING  *
+*
+      ESA      MESSAGES *
+*
+      TEST     HTML     *
+      ROCKTALK PDF      *
+      AICCP_83 JPG      *
+      AICCP_86 JPG      *
+*

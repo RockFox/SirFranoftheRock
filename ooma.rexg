@@ -1,0 +1,24 @@
+/* Check ooma for voice mail */
+.PlainBaseDialog~setDefaultFont("Arial", 14)
+ 
+   r = testStandardTM()
+   Address command "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+https://my.ooma.com/home/login"
+ 
+Exit
+ 
+ 
+::requires 'VisibleTimedMessage.cls'
+ 
+::routine testStandardTM
+ 
+   msg = 'Countdown to open ooma to check for voicemail'
+   title = 'ooDialog Example'
+   pos = .Point~new(50, 100)
+ 
+   visible = .VisibleTimedMessage~new(msg, title, 60000,  , pos)
+ 
+   visible~execute
+ 
+   return 0
+ 

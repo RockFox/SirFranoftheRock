@@ -1,0 +1,10 @@
+<HTML>
+<HEAD>
+<TITLE>Counter for HOW</TITLE>
+</HEAD>
+ 
+<BODY>
+<P>
+<H4> You are visitor number <wpcount> to this page
+</BODY>
+</HTML>

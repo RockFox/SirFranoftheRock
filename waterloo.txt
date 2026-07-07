@@ -1,0 +1,1437 @@
+DATE OF ABSTRACT IS 05/25/82                                                    
+M0001V00NUCMAP-- This program reads a printed CP nucleus map and condenses it   
+into small data sets sorted numerically and alphabetically.  Usually this is all
+the information you need to test a new CP system, so you are saved  the delays  
+and paper involved in getting a printed listing.  Requires PLI  subroutine      
+library.  Formerly M0004V00 on Release 5.--Larry Brenner, Cornell  University,  
+Ithaca, New York, November 21, 1979.                                            
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000011                                              
+                                                                                
+                                                                                
+M0002V00MTAM AND ATAM-- The CMS Multiple Terminal Application Monitor (MTAM) is 
+designed to facilitate using the CMS Terminal Access Method (ATAM) with multiple
+terminals.  MTAM is intended to provide a vehicle for the design  and           
+implementation of multi-user special-purpose systems which would be             
+uneconomical or infeasible to make available via multiple virtual machines.     
+Formerly M0013V00 on Release 5.--Lorne Connell, University of Waterloo,         
+Waterloo, Ontario, November 22, 1979.                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000177                                              
+                                                                                
+                                                                                
+M0003V00DIRECTORY MAINTENANCE PACKAGE-- Meets half the points in the SHARE      
+directory  resolution (esp. automatic allocation of minidisks). Formerly        
+M0042V01 on  Release 5.--Dave Gomberg, UCSF, San Francisco, California,         
+November 23, 1979.                                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000203                                              
+                                                                                
+                                                                                
+M0004V00OS-VS DISK MODS-- modifications to CP FORMAT-ALLOCATE and the OS-VS disk
+initialization program in order to share both CP-owned and non CP-owned DASD    
+volumes between VM/CMS and OS-VS systems.  These volumes can be  accessed by    
+OS-VS in both virtual machine and real machine.  Formerly  M0050V00 on Release  
+5.--G. Glizer, S.A. Meneven, Caracus, Venezuela,  November 26, 1979.            
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000008                                              
+                                                                                
+                                                                                
+M0005V00CMSASMH-- interface for Assembler H Version 5 under CMS.  Formerly      
+M0051V00 on Release 5.--A. Pagni & M. Sommani, CNUCE, Pisa, Italy,              
+November 26, 1979.                                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000027                                              
+                                                                                
+                                                                                
+M0006V00RENUM-- program to renumber COBOL source programs.  Formerly M0054V00 on
+Release 5.--F. Springer-Miller, American International Group Data Centre,       
+Manchester, New Hampshire, November 26, 1979.                                   
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0007V00HEX-- interactive program to add and subtract six digit hexadecimal     
+addresses. Formerly M0055V00 on Release 5.--F. Springer-Miller, American        
+International Group Data Centre, Manchester, New Hampshire, November 26, 1979.  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000010                                              
+                                                                                
+                                                                                
+M0008V00WAITC-- CMS routine to be used instead of CP SLEEP in EXEC loops which  
+might have to be interrupted.  Use of clock comparator requires ECMODE on.      
+Formerly M0061V00 on Release 5.--Larry Brenner, Cornell University,  Ithaca, New
+York, November 26, 1979.                                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0009V00XREF-- This package processes a group of assemble and update files to   
+produce  a cross reference listing of the global symbols and the names of the   
+modules  referencing them.  This package can be used on any VM component        
+(DMK,DMS etc.)  or other component (such as the 3705 emulator program) which is 
+maintained  using control files and the CMS UPDATE command.  The output format  
+is similar  to that now used in the VM System Logic Manual.  Documentation has a
+filetype  of MEMO.  This package is release independent.  Formerly M0064V00 on  
+Release 5.--Herb Weiner, Tektronix, Beaverton, Oregon, November 26, 1979.       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000038                                              
+                                                                                
+                                                                                
+M0010V00EDIT MACROS-- Two EDIT macros, $BOX and $BRACKET, aid in documenting    
+CP/CMS commands using SCRIPT.  $BOX creates a box for command syntax diagrams.  
+$BRACKET places groups of operands into a box, surrounded by square brackets.   
+Documentation can be formatted using SCRIPT, or typed without formatting.       
+This package is release independent.  Formerly M0065V00 on Release 5.           
+--Herb Weiner, Tektronix, Beaverton, Oregon, November 26, 1979.                 
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000004                                              
+                                                                                
+                                                                                
+M0011V00CMS COMPARE COMMAND REPLACEMENT-- This command performs all the         
+functions of the IBM provided COMPARE command.  In addition, the following major
+extensions are provided:  (1) this program can identify,  within the limits of  
+available virtual storage, any number of inserted or  deleted records.  (2)     
+This program can compare files with different record  lengths and/or record     
+formats.  Records are padded on the right with blanks  where necessary.  (3)    
+Output can be directed to the terminal, disk, printer,  or any combination of   
+these.  (4)  This program can produce an UPDATE file  suitable for the CMS      
+UPDATE command.  This update file can be used to update   the first file to the 
+second file.  (5)  Given two CMS files with      differences in content and/or  
+sequence numbers and an update file which  applies to the first file, this      
+program can produce an update file with the  correct sequence numbers to apply  
+the same changes to the second file.  This  facility has been used at Cornell to
+simplify the task of upgrading local  modifications at release change time.  (6)
+Additional minor enhancements.  Documentation has a filetype of MEMO.  This     
+program is release independent.  Formerly M0066V00 on Release 5.--Herb Weiner,  
+Tektronix, Beaverton, Oregon,  November 26, 1979.                               
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000046                                              
+                                                                                
+                                                                                
+M0012V01ENDECODE-- This subroutine offers essentially the same capability as    
+M0018V00READZERO, but is different in two respects.  First, the subroutine is   
+not a list of modifications to IBCOM and is essentially  release-independent;   
+and with minor changes (documented in the source),  the same subroutine can be  
+used with DOS FORTRAN.  Second, the   ENCODE/DECODE/REREAD unit is user         
+selected; zero works also.  A new  option has been added in this update, which  
+lets the user specify a  maximum lines per page on the printer output file.     
+Formerly M0068V01  on Release 5.--Richard Russell, Badger America Inc.,         
+Cambridge,  Massachusetts, March 31, 1980.                                      
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000008                                              
+                                                                                
+                                                                                
+M0013V00DOS/VS VM/370 INTERFACE-- A batch program capable of communication with 
+CP is provided as well as an attention routine transient to allow the DOS/VS    
+console operator to issue messages to CP.  A CICS transaction  is also provided 
+to allow a terminal operator to reset his/her terminal.  No DOS/VS supervisor   
+modifications are required.  This modification is  compatible with Release 3, 4,
+5 and 6.  Formerly M0071V00 on Release 5.--Paul Hart, GTE Automatic Electric    
+(Canada) Ltd., Brockville, Ontario,  November 30, 1979.                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000022                                              
+                                                                                
+                                                                                
+M0014V00FORTRAN TO PL/I Language Conversion-- This is the IBM Type 3 Fortran    
+IV-to-PL/I F Language conversion program (program number 360C-CV-710). It       
+converts Fortran source programs to PL/I F.  Documentation has a  filetype of   
+LISTING.  Formerly M0073V00 on Release 5.--Gabe Goldberg,  Mitre Corporation,   
+McLean, Virginia, November 30, 1979.                                            
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000433                                              
+                                                                                
+                                                                                
+M0015V01SNOBOL4 VERSION 3.5-- This is SNOBOL4 Version 3.5 as distributed by Bell
+Telephone Laboratories modified to run under CMS.  It has been updated to work  
+with VS FORTRAN, in addition to older FORTRANs.--Gabe Goldberg,  The Mitre      
+Corporation, McLean, Virginia, February 1, 1982.                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000057                                              
+                                                                                
+                                                                                
+M0016V00GPSS V INTERFACE-- A modified version of the interface routine for GPSS 
+V  (modification M0048V00 on Release 5) which supports HELP blocks and an EXEC  
+to invoke it.  It was also necessary to add code to the interface routine  to   
+intercept STIMER and TTIMER requests from GPSS.  The GPSSV EXEC uses an  exec   
+called DEFT to get temporary space.  This is available in VMIX, or can  be      
+replaced by any exec which gets a temporary 'C' disk.  Formerly M0075V00  on    
+Release 5.--Gabe Goldberg, Mitre Corporation, McLean, Virginia, November  30,   
+1979.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000015                                              
+                                                                                
+                                                                                
+M0017V002250'S UNDER CMS-- An abstract describing support for 2250's under CMS. 
+This package is so large it's not practical to include it in the library; the   
+abstract describes how it can be ordered.  Formerly M0076V00 on Release 5.      
+--Gabe Goldberg, Mitre Corporation, McLean, Virginia, November 30, 1979.        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M0018V00READZERO-- Modifications to IHOIBCOM provide Fortran with the ability to
+reread a previous record.  The ability to write a record for later rereading is 
+also provided.  Logical unit zero is the reread unit.  Formerly M0018V00  on    
+Release 5.--J. Best, Pratt & Whitney Aircraft, East Hartford, Connecticut,      
+December 3, 1979.                                                               
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0019V00PROGRAM TO MANIPULATE ITXTLIBS-- ITXTLIB files created by the PL/I      
+checkout  compiler under CMS, like OS partitioned datasets, expand when members 
+are  changed since existing space is not reused.  At present there is no way to 
+compress or map them or to delete unwanted members.  This program provides these
+facilities; it is called ITXTLIB.  Its external operation is similar  to the CMS
+MACLIB command.  Documentation is a listing file and should be  printed on a    
+printer with lower case characters, or one whose lower case  characters are     
+folded into upper case characters, or using the UPCASE  option on the print     
+command.  Formerly M0077V00 on Release 5.-- Gabe Goldberg,  Mitre Corporation,  
+McLean, Virginia, December 3, 1979.                                             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000020                                              
+                                                                                
+                                                                                
+M0020V00DATA TRANSLATION TO/FROM ASCII-- This macro and subroutine translate    
+data between ASCII and EBCDIC.  Translation of data between ASCII and EBCDIC may
+be requested by assembler or high level languages.  Documentation  is a listing 
+file and should be printed on a printer with lower case  characters, or one     
+whose lower case characters are folded into upper case  characters, or using the
+UPCASE option on the print command.  Formerly  M0078V00 on Release 5.--Gabe     
+Goldberg, Mitre Corporation, McLean, Virginia,  December 3, 1979.               
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000009                                              
+                                                                                
+                                                                                
+M0021V00RSCS ACTIVITY DATA COLLECTOR-- This update and PL/I program produce     
+reports  on the activity of DMTNPT links under RSCS.  The code should be easily 
+modifiable for DMTSML.  Documentation is a listing file and should be printed on
+a printer with lower case characters, or one whose lower case  characters are   
+folded into upper case characters, or using the UPCASE option  on the print     
+command.  Formerly M0079V00 on Release 5.--Gabe Goldberg,  Mitre Corporation,   
+McLean, Virginia, December 3, 1979.                                             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000017                                              
+                                                                                
+                                                                                
+M0022V00FORTRAN G REL. 21  UNDER CMS-- Fortran library routine are in the file  
+FORTLIB TXTLIB.  Formerly M0080V01 on Release 5.--Lorne Connell, University of  
+Waterloo, Waterloo, Ontario, December 3, 1979.                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000105                                              
+                                                                                
+                                                                                
+M0023V00USERMAC-- MACLIB containing program which sets up all OS/VS/CMS saving, 
+chaining, restoring, and linkage; VWTO, VWTOR, VWTL which correspond to the     
+standard WTO, WTOR, and WTL with provision to insert variable data  at execution
+time.  Documentation is in both SCRIPT and LISTING formats.  60 disk blocks are 
+required.  Formerly M1084V01 on Release 5.--Richard  Greenberg, INCO Limited,   
+New York, New York, December 4, 1979.                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000013                                              
+                                                                                
+                                                                                
+M0024V00CMSTMS-- This is a package which provides rudimentary OS tape label     
+support  in CMS, and an interface to record CMS output tapes in either UCC's TMS
+system or Gulf's TLMS system.  Documentation is in both SCRIPT and LISTING      
+formats.  Requires macros in M0023V00USERMAC.  123 disk blocks are required.    
+Formerly M1085V00 on Release 5.--Richard Greenberg, INCO Limited, New York, New 
+York, December 4, 1979.                                                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000028                                              
+                                                                                
+                                                                                
+M0025V00PRTRCVR-- This program will read a spooled printer file from the reader 
+and print it retaining the original carriage control or it will create a file of
+type LISTING which retains the carriage control.  Documentation  is in the      
+source as comments.  Required macros in M0023V00USERMAC.  24 disk blocks  are   
+required.  Formerly M1086V00 on Release 5.--Richard Greenberg,                  
+INCO Limited, New York, New York, December 4, 1979.                             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000006                                              
+                                                                                
+                                                                                
+M0026V00DIRLIST-- This program will read a VM directory and print it stripping  
+out control information, passwords, and selected userids.  Stripping of         
+passwords and selected userids can be bypassed with parms.  Printing  is done   
+one userid to a page.  Documentation is in the source as comments.  Requires    
+macros in M0023V00USERMAC.  8 disk blocks are required. Formerly M1087V00       
+on Release 5.--Richard Greenberg, INCO Limited, New York, New York, December    
+4, 1979.                                                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000008                                              
+                                                                                
+                                                                                
+M0027V01USERID-- This program will get the userid of its virtual machine and    
+stack it in the CMS console buffer.  Can be useful in system execs to determine 
+the source of the request.  Can run in either the user area  or the transient   
+area.  Documentation is in the source as comments.  Requires macros in          
+M0023V00USERMAC.  Formerly M1088V01 on Release 5.  --Richard Greenberg, American
+International Group, New York, New York,  April 10, 1980.                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M0028V00STKTIME-- This program will get the current date and time from CP and   
+stack it in the CMS console buffer.  Can be useful in system execs to determine 
+when the request originated.  Documentation is in the source  as comments.  An  
+exec WAIT which uses STKTIME to wait for a specified  time of day is also       
+included.  Requires macros in M0023V00USERMAC. 12  disk blocks are required.    
+Formerly M1090V00 on Release 5.--Richard  Greenberg, INCO Limited, New York, New
+York, December 10, 1979.                                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000004                                              
+                                                                                
+                                                                                
+M0029V02MACROS MACLIB-- This MACRO library contains a set of macros for         
+structured programming techniques and housekeeping tasks.  The macros are       
+designed to be efficient and produce code equivalent to hand generated  code.   
+The documentation is of type LISTING.  The SCRIPT source is also  included.     
+Formerly M1093V01 on Release 5.--Romney White, University of  Waterloo,         
+Waterloo, Ontario, December 10, 1979.  Updates, Ronald Jackson,  University of  
+Waterloo, October 14, 1980.                                                     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000142                                              
+                                                                                
+                                                                                
+M0030V00OSPDS-- is a general purpose exec to manipulate members of an OS PDS in 
+CMS.  It works similarly to the CMS/DOS commands SSERV, DSERV, and PSERV. It    
+also has additional capabilities the previously mentioned commands do  not have.
+The exec is self documenting for an applications programmer  by typing OSPDS    
+HELP.  For the systems programmer all that needs to be  said is change the exec 
+where the keyword acronyms are located for your  own heavily used               
+datasets.  Formerly M1109V00 on Release 5.--Mark Hanisco, William H. Rorer      
+Inc., Fort Washington, Pennsylvania, December 10, 1979.                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000003                                              
+                                                                                
+                                                                                
+M0031V00NEW RENUM COMMAND-- will also renumber filetypes of Cobol and Basic. The
+function of the command has not changed only the addition of Cobol  and Basic as
+legal filetypes for renumbering.  Formerly M1132V00 on  Release 5.--J.E. Mort,  
+Western Michigan University, Kalamazoo, Michigan,  December 10, 1979.           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000003                                              
+                                                                                
+                                                                                
+M0032V00HEX EXEC-- The HEX EXEC is a CMS exec that will add and subtract 6 digit
+hex numbers and display the result in hex and decimal.  Formerly M1133V00 on    
+Release 5.--William C. Brinkman, Fleming Companies, Inc., Oklahoma City,        
+Oklahoma, December 10, 1979.                                                    
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M0033V01UNITWAIT-- 'UNITWAIT' is a CMS transient command which will cause an    
+exec  to wait for a tape to be mounted.  Can also be used when a drive is       
+already  attached to verify that the write ring is in or out as required by the 
+program.  Particularly handy for use by disconnected virtual machines who want  
+to use tape.  The command is documented via a CMS help file.  This is  a new    
+version of UNITWAIT which will execute with no CMS or CP modifications  on any  
+VM/SP or VM/370 BSEPP/SEPP system; it is currently in use on a VM/SP Release 1  
+put 8103 system.--Gary D. Schulz, Northwest Industries, Inc., Chicago,          
+Illinois, December 3, 1981.                                                     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000021                                              
+                                                                                
+                                                                                
+M0034V00REGXREF-- Gives a cross-reference of register usage in an assembler     
+program.  Formerly M1145V00 on Release 5.--Garnet MacPhee, Bancology Inc., El   
+Paso, Texas, December 10, 1979.                                                 
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000112                                              
+                                                                                
+                                                                                
+M0035V00MONSEEKS-- MONSEEKS and MONSKCYL are two programs which will analyze    
+monitor tapes and produce reports showing total DASD seeks for the monitor      
+period.  MONSEEKS will show the total number of seeks for each  DASD address,   
+MONSKCYL will give a breakdown by cylinder for a single  DASD address.  Formerly
+M1146V00 on Release 5.--Garnet MacPhee, Bancology  Inc., El Paso, Texas,        
+December 10, 1979.                                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000013                                              
+                                                                                
+                                                                                
+M0036V00SCANNER-- provides a method of interrogating a tape attached to a       
+virtual machine, using a display terminal.  This program is release independent.
+Formerly M1148V00 on Release 5.--Henry E. Warg,  General Accident Group,        
+Philadelphia, Pennsylvania, December 10, 1979.                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000010                                              
+                                                                                
+                                                                                
+M0037V01MONITOR-- VM/370 contains much timing and performance information that  
+is  essentially inaccessible.  It is contained in the PSA, in VMBLOKS, and      
+various  other fields throughout VM that can only be displayed with the DCP or  
+DMCP  commands.  This monitor, which runs in its own virtual machine, samples   
+many of these fields every thirty seconds, and produces comprehensive reports on
+system and user activity.  All files necessary to run and modify  the monitor   
+are provided.  Document file MONDOC LISTING should be printed  on a printer with
+lower case characters, or one whose lower case characters  are folded into upper
+case characters, or using the UPCASE option on the  print command.  This is     
+verion 2.0A of the monitor.  It can be fully   controlled remotely, and can     
+create a history tape of performance data.  It  supports the standard, MITRE and
+BSEPP/SEPP schedulers.  It supports VM Release  6.  The document includes a     
+performance questionnaire for the SHARE VM  Performance Committee.  Formerly    
+M1153V00 on Release 5.--Gabe Goldberg,  The MITRE Corporation, McLean, Virginia,
+March 6, 1981.                                                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000174                                              
+                                                                                
+                                                                                
+M0038V00AUTOOP-- allows users to have teleprocessing lines, other devices, and  
+disk packs and tapes that are mounted attached without operator intervention.   
+AUTOOP runs in its own virtual machine, receives requests  in the form of spool 
+files, and executes appropriate commands in response  to valid requests.  All   
+files necessary to run and modify AUTOOP are  provided.  This is version 2.6A of
+AUTOOP.  It provides enhanced operator  control of automatic hourly processing, 
+and performs more validation of  user requests.  Formerly M1154V00 on Release   
+5.--Gabe Goldberg, Mitre  Corporation, McLean, Virginia, December 10, 1979.     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000074                                              
+                                                                                
+                                                                                
+M0039V02CPWATCH-- is an online performance monitor for VM/370.  It displays (on 
+DIALed local 3270's) enough about the current activity of CP to allow an        
+intuitive grasp of system load, gross conflicts, and the currently active users.
+CPWATCH 3.3 is operational on CP 6.11 with BSEP (5748-XX8).  Changing  a GBLB   
+variable and re-assembling of two modules will be required for non-BSEP         
+operation.  Documentation has a filetype listing, and should be printed  on a TN
+print train or with (UPCASE option.  This revision has code to survive  VM      
+Passthrough (5748-RC1).  Formerly M2170V00 on Release 5.--G.D. George,  Cominco 
+Ltd., Trail, British Columbia, December 12, 1980.                               
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000185                                              
+                                                                                
+                                                                                
+M0040V01NUCLEUS-- CMS command accesses DMKSYM using diagnose X'38' to enable    
+symbolic display, change, stack, etc. of CP addresses and data in real storage. 
+Hex increments may be added to or subtracted from the base  address for direct  
+offset addressing into CP modules.  Both fixed and  pageable areas are handled. 
+Also included is an optional DMKSYM update  which provides a more useful symbol 
+table, and a program for generating  your own.  Release 6 PLC 3 (sample DMKSYM  
+update is for BSEPP, though).  This new version removes various restrictions    
+which forced you to deal  only in fullwords of data.  Formerly M0003V00 on      
+Release 5.--Larry  Brenner, Cornell University, Ithaca, New York, March 19,     
+1980.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000035                                              
+                                                                                
+                                                                                
+M0041V01PAGE MIGRATION-- Modifications to CP significantly improve performance  
+by ensuring that heavily used pages are located in 2305 paging space. Also      
+provides commands for limiting or guaranteeing 2305 space to users.             
+Documentation is in MIGRAT LISTING (and SCRIPT).  VM/SP SLU 105.  Formerly      
+M1114V00 on Release 5.--Larry Brenner, Cornell University.  Updated by Richard  
+Alexander, Cornell University, Ithaca, New York, December 21, 1981.             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000077                                              
+                                                                                
+                                                                                
+M0042V00SETLOG-- CMS command replaces the CP log messages with the contents of  
+the CMS LOG MSG file.  This enables your operators to maintain the log messages 
+with EDIT.  The CP SET LOG command is modified to take message  data on the     
+command line rather than prompting for it.  Release 6 PLC 3.--Larry Brenner,    
+Cornell University, Ithaca, New York, December 12, 1979.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0043V00HARDCOPY-- Modifications to CP support a specific local 3286 type device
+as a real time hard copy operator log.  The hit to DMKOPR also fixes a timing   
+problem which causes faster CPUs to lose the system termination  messages       
+produced by ABEND, SHUTDOWN, or RESTART.  Release 6 PLC 3.--Larry Brenner,      
+Cornell University, Ithaca, New York, December 12,1979.                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000013                                              
+                                                                                
+                                                                                
+M0044V00DDR6-- Performance enhancements to DDR.  This modification allows DDR to
+take advantage of the read multiple count, key, and data CCW when your hardware 
+supports it to halve the amount of disk I/O required to read  each track.  Data 
+compression and tape blocking options can be invoked  to roughly halve the      
+amount of tape required when dumping, enabling a  3350 to fit on two 2400'      
+tapes, and a 3310-11 to almost always fit on 1.  (The release 5 M1128V00DDR2 mod
+by Ron Rast of SMUD is included, updated  as necessary to apply with the DDR6   
+code).  Release 6 PLC 3.--Larry  Brenner, Cornell University, Ithaca, New York, 
+December 12, 1979.                                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000037                                              
+                                                                                
+                                                                                
+M0045V00CPSTACK-- CMS command interfaces to diag 8 to provide the responses to  
+CP commands in the CMS console input stack.  Release 6 PLC 3.--Larry Brenner,   
+Cornell University, Ithaca, New York, December 12, 1979.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0046V00PAGE2305-- Improves the paging performance of the 2305-2 by using 3     
+exposures (device addresses) instead of 1.  Includes mod to DMKFMT to reformat  
+the 2305-2 with 520 byte filler records as required by  the update to DMKPAG.   
+Release 6 PLC 3.--Larry Brenner, Cornell University,  Ithaca, New York, December
+12, 1979.                                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000003                                              
+                                                                                
+                                                                                
+M0047V00LOADER UPDATES-- Improves performance of the CMS loader by keeping RLD  
+cards in virtual storage rather than creating a utility file.  Release 6 PLC 1  
+with BSEPP.  Formerly M0017V00 on Release 5.--J. Best, Pratt &  Whitney         
+Aircraft, East Hartford, Connecticut, December 13, 1979.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000003                                              
+                                                                                
+                                                                                
+M0048V00DRUMMODS-- Paging performance modifications for 2305-2 drums.  Includes 
+track reformat, use of multiple exposures and deferred SIO.  Release 6 PLC 1    
+with BSEPP.  Formerly M0019V00 on Release 5.--J. Best, Pratt &  Whitney         
+Aircraft, East Hartford, Connecticut, December 13, 1979.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000006                                              
+                                                                                
+                                                                                
+M0049V00MOUNTCMD-- CP MOUNT command allows messages to the CP system operator to
+be saved, redisplayed and deleted.  Release 6 PLC 1 with BSEPP.  Formerly       
+M0021V00 on Release 5.--J. Best, Pratt & Whitney Aircraft, East Hartford,       
+Connecticut, December 13, 1979.                                                 
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000015                                              
+                                                                                
+                                                                                
+M0050V00BALANCE-- Dynamic balancing of multiple duplicate minidisks at start I/O
+time.  Allows multiple S-disks, Y-disks, etc.  Release 6 PLC 1 with BSEPP.      
+Formerly M0022V00 on Release 5.--J. Best, Pratt & Whitney Aircraft, East        
+Hartford, Connecticut, December 13, 1979.                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000015                                              
+                                                                                
+                                                                                
+M0051V00FREEMODS-- Modifications to CP FREE/FRET routine which eliminate most   
+garbage collections and most extends.  Release 6 PLC 1 with BSEPP. Formerly     
+M0023V00 on Release 5.--J. Best, Pratt & Whitney Aircraft,  East Hartford,      
+Connecticut, December 13, 1979.                                                 
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000004                                              
+                                                                                
+                                                                                
+M0052V00TRACEFMT-- CMS program which reads CP ABEND dumps from disk and prints a
+formatted copy of the trace table, registers, freesave, etc.  Release 6 PLC 1   
+with BSEPP.  Formerly M0024V00 on Release 5.--J. Best, Pratt & Whitney Aircraft,
+East Hartford, Connecticut, December 13, 1979.                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000028                                              
+                                                                                
+                                                                                
+M0053V01OSDA-- supports direct read and write for PLI programs of unkeyed BDAM  
+datasets on OS disks.  Formerly  M0041V00 on Release 5.--Dave Gomberg, UCSF, San
+Francisco, California, October 7, 1981.                                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000043                                              
+                                                                                
+                                                                                
+M0054V00PLEA-- The PLI Execution Analyser records CPU usage (TIMER ON) or       
+elapsed time usage (TIMER REAL) by PLI statement number without source changes  
+or recompilation.  Courtesy of Standard Oil of California   and Statistics      
+Canada.  Formerly M1110V00 on Release 5.--Dave Gomberg,  UCSF, San Francisco,   
+California, December 14, 1979.                                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000118                                              
+                                                                                
+                                                                                
+M0055V00PLISEG-- PLI optimizer transient library in a DCSS.  Saves up to 80% on 
+IO, CPU and elasped time for PLI optimizer programs (more for shorter programs).
+Easy to install and can be made transparent to the user.  Formerly M0043V00     
+on Release 5.--Dave Gomberg, UCSF, San Francisco, California and Ed Haines,     
+Lincoln Labs, MIT, Lexington, Mass., December 14, 1979.                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000008                                              
+                                                                                
+                                                                                
+M0056V00JCLSCAN-- verifies OS JCL on CMS prior to submission to an OS Batch     
+System.  Formerly M0069V00 on Release 5.--Gary McNitt, AMOCO Production Company,
+Tulsa, Oklahoma, December 14, 1979.                                             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000974                                              
+                                                                                
+                                                                                
+M0057V01ZIP3277-- This program will get the console type from CP.  If the       
+console is a screen (3277, 3278, 3158, 3066) the screen will be cleared. (3278  
+only with SEPP, BSEPP.)  Optionally, the console type will be returned  in the  
+console stack.  Can run in either the user area or the transient area.  Requires
+macros in M0023V00USERMAC.  Documentation is in both listing and  script        
+formats.  Formerly M1089V02 on Release 5.--Richard Greenberg,   American        
+International Group, New York, New York, April 14, 1980.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0058V00CPEX-- CPEX is a CMS module that stacks the response(s) to a CP command 
+in the CMS console stack.  Documentation has a filetype  of MEMO.  Formerly     
+M0005V00 on Release 5.--Romney White,  University of Waterloo, Waterloo,        
+Ontario, January 4, 1980.                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0059V00FORMS CONTROL FACILITY-- The Forms Control Facility is a rather large   
+modification to the VM/370 Control Program to provide support for forms codes   
+for CP spool files.  Included are two kinds of forms control for  real spooling 
+output devices, user-owned CP spooling device support,  FWDSPACE, SUSPEND and   
+SWITCH commands and FORM operands in all  applicable spooling commands.  The    
+capability to perform a virtual  forms change is also provided.  NOTE:  There is
+no support included   in this package for the 3800 printer.  Documentation has a
+filetype  of LISTING.  Release 6, PLC 4.  Formerly M0008V02 on Release          
+5.--Romney  White, University of Waterloo, Waterloo, Ontario, January 7, 1980.  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000106                                              
+                                                                                
+                                                                                
+M0060V00MAINT-- This consists of a set of EXECs and MODULEs used to maintain CP,
+CMS, RSCS, ICPS, VS APL, and several internally developed  subsystems.  The     
+EXECs can be used as a complete maintenance system  or individual EXECs can be  
+extracted to be incorporated into existing  maintenance procedures to perform   
+such functions as a 5-way nucleus  X-REF or a X-REF of modules versus updates   
+(submitted by P.Fogleman,  Boeing Computer Services, M0056V00 on Release 5).    
+The EXECs have  been enhanced at SLAC to allow maintenance of VM/370 Release 6  
+BSEPP 2.  (The CTS system was used and modified.)  Several new EXECs have been  
+written and integrated into the basic CTS structure.--Richard (Dick) Johnson,   
+Stanford Linear Accelerator Center, Stanford, California,  February 15, 1979.   
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000409                                              
+                                                                                
+                                                                                
+M0061V02PE-EDIT-- these modifications to the editor are an accumulation of 8    
+years  of editor ideas and modifications.  Major enhancements include:  1)      
+recursive  editing, 2) hi-intensity screen usage, 3) record lengths up to 255   
+bytes,  4) improved efficiency, and 5) too many new commands to mention.  See   
+the  document file for a compact list of changes.  A complete set of script     
+files  for generating a manual for editor usage is also included.  This editor  
+is  based on VM/SP Release 1 PLC 2.  Formerly M1092V00 on Release 5. IMPORTANT  
+NOTE FROM U. OF W.:  When this modification was added to the library the  EDIT  
+MODULE was renamed to IEDIT MODULE so it would not interfere with our  system's 
+edit module.--Bruce S. Marshall, Perkin-Elmer Corporation, Danbury,             
+Connecticut, May 27, 1981.                                                      
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000421                                              
+                                                                                
+                                                                                
+M0062V01HI-INTENSITY CP MODS-- Provides four additional functions for 3270      
+users.  The DISPW MACRO of CMS has two new operands, HI and ATTR.  Messages from
+CP  users will be displayed in hi-intensity on 3270 terminals.  Use of the first
+function allows the editor supplied by Perkin-Elmer to use hi-intensity for     
+manipulating the screen display.  Implementation of the 'SET MORE SEC1 SEC2' CP 
+command to allow a user to vary the timing intervals for the more status        
+condition.  Formerly M1091V01 on Release 5.  These updates are for Release 6    
+PLC 13.--B. Waggoner, Perkin-Elmer Corp., Danbury, Connecticut, October 1,      
+1980.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000056                                              
+                                                                                
+                                                                                
+M0063V03P-E TAPE COMMAND-- Modifications to Perkin-Elmer's version of tape      
+command  for Release 6.  There is a new tape format consisting of an embedded   
+header  and blocksize of 16005 for tape records (use of 'BLKSIZE' option allows 
+user to specify blocksize up to 32005).  Also allows user to write tapes in PLC 
+format.  All IBM formats (old 800 byte and new 4096 byte formats),  old PE      
+format, and PLC tapes can be read, and they all can be written except  for the  
+old PE format.  Also, the tape command will consist of two modules.  For more   
+information about all the changes in the tape command see the   document file.  
+There is tape command support for BSEPP and non BSEPP, based  on Release 6 PLC  
+5.--Steve Bernstein, Perkin-Elmer Corporation, Danbury,  Connecticut, January 7,
+1981.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000094                                              
+                                                                                
+                                                                                
+M0064V04SELDUMP-- is Perkin-Elmer's SELective DUMP routine which is used to back
+up files on disk by putting them on tape.  The PETAPE COMMAND modification is   
+also used.  Release 6 and VM/SP.--E. Spongberg, Perkin-Elmer Corporation,       
+Danbury, Connecticut, February 29, 1980.  Updates, Steve Bernstein, Perkin-Elmer
+Corporation, April 13, 1981.                                                    
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000098                                              
+                                                                                
+                                                                                
+M0065V01SCROLL-- CMS console scrolling.  This modification allows the CMS user  
+to have access to previous data displayed on his/her terminal.  All CMS console 
+I/O is recorded on a 1 cylinder minidisk (3330,3340,3350).  CP/CMS commands will
+run under SHOW, providing full screen support.  No  CP mods, CMS only mod       
+sequencing is SEPP/BSEPP, but code is mostly  Release 5/6 compatible.  Only     
+NUCON MACRO need be resequenced for  Release 5 retrofit.  Document file has     
+carriage control and should be  printed with 'CC' option.--Bruce M. Ferry,      
+Youngstown State University,  Youngstown, Ohio and A. B. Krueger, American      
+Natural Service Co.,  Detroit, Michigan, April 17, 1980.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000391                                              
+                                                                                
+                                                                                
+M0066V00EDGARDAT-- Transient module that stacks information about the current   
+EDGAR level.  Specifically, the filename, filetype, filemode and LRECL are      
+stacked.--Bruce M. Ferry, Youngstown State University, Youngstown,  Ohio, March 
+4, 1980.                                                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000004                                              
+                                                                                
+                                                                                
+M0067V01CARD-- An extremely fast replacement for the CMS DISK command.  Can deal
+with multiple files using either * notation (like LISTFILE) or continuous       
+spooling.  Two versions of the program are provided, one for BSEPP Rel. 2 and   
+VM/SP systems, and one for older systems.  The DOCUMENT file describes  this    
+command, and CARD36 MEMO describes the release dependencies.--Larry  Brenner,   
+Cornell University, Ithaca, New York, December 17, 1981.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000090                                              
+                                                                                
+                                                                                
+M0068V00DMKDIR-- Enhanced Directory Program Support Features.  A small          
+modification  to DMKDIR allows an average of a 75% decrease in the source and   
+object size  of the CP directory.  Size reduction and eased management are      
+accomplished  by allowing an installation to define up to 340 physically shared 
+template directory entries.  In many instances, the templates allow a new entry 
+to be defined with a single USER card.  Also, one directory entry  may be       
+physically joined to a previously defined entry.  This feature   allows the     
+omission of common device cards.  Finally, the directory  program will type the 
+number of pages the object directory will require.  The modification is         
+compatible with VM/370 Release 6 BSEPP/SEPP but will  function with other VM/370
+releases after possible resequencing.--Andy  Hanushevsky, Cornell University,   
+Ithaca, New York, March 5, 1980.                                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000036                                              
+                                                                                
+                                                                                
+M0069V00IPCS-- DUMPSCAN EXTENSIONS.  Several modifications to the DUMPSCAN      
+program  significantly enhance its operation.  Specifically, a new command, TRT,
+is added which formats the CP trace table into readable text.  Each displayed   
+entry includes userid and module name plus offset substitution  where           
+applicable.  A comprehensive set of operands allow for easy viewing  of the     
+trace table and the scanning for selected events.  The VMBLOK command  has been 
+enhanced to allow the location or display of a specific VMBLOK  by address or   
+userid.  The DMK command has been enhanced.  Specifically,  the command will use
+DMKSYM as the load map should a NUC MAP not be  present.  The LOCATE command    
+will no longer type PAGE NOT FOUND during an  extended search.  The supplied    
+updates are compatible with VM/370 Release  6 with BSEPP or SEPP.--Andy         
+Hanushevsky, Cornell University, Ithaca, New  York, March 5, 1980.              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000111                                              
+                                                                                
+                                                                                
+M0070V00MSIM-- Performance Monitoring Simulator.  MSIM is a CMS based program   
+which allows the simulation of the execution environment of practically any     
+virtual machine.  A comprehensive command repertoire allows the  precise control
+of a virtual machine's working set, I/O and CPU  utilization, wait time, and    
+many other execution parameters.  Extensive  and precise monitoring capabilities
+via eight resource timers and two  CPU timers are provided.  Depending on other 
+monitoring features  installed on the host VM/370 system, the program may be    
+allowed to  report resource usage directly.  Execution command files may be     
+prewritten to ease installation and accounting verification in addition to      
+system tuning.  MSIM is compatible with all releases of CMS.--Andy  Hanushevsky,
+Cornell University, Ithaca, New York, March 5, 1980.                            
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000237                                              
+                                                                                
+                                                                                
+M0071V00RESLIB-- CMS Nucleus Resident Library.  RESLIB is a CMS transient area  
+program that allows a user to define commands which will be treated as nucleus  
+resident by CMS.  These commands may be new or replacements  for CMS supplied   
+user and transient area commands.  RESLIB also allows  the allocation of storage
+resident work areas which are not released  between executions of commands.  The
+location of work areas and commands  can be determined by calling RESLIB with an
+associated area identifier.  Common problems eliminated by RESLIB are:  1) CMS  
+transient area  contention, 2) lack of concurrent execution capability, and 3)  
+lack  of permanent global communication areas.  RESLIB is compatible with all   
+releases of CMS.--Andy Hanushevsky, Cornell University, Ithaca, New York, March 
+6, 1980.                                                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000044                                              
+                                                                                
+                                                                                
+M0072V01FCOPY-- A disk-to-disk copy program which is many times faster than     
+COPYFILE, but permits no reformatting.  Multiple files may be specified using * 
+notation (like LISTFILE).  Two versions of the program are  provided, one for   
+BSEPP Rel. 2 and one for standard systems (previously  DCPY on the Release 3 and
+5 tapes).  The DOCUMENT file describes this  command, and FCOPY36 MEMO describes
+the release dependencies.--Larry  Brenner, Cornell University, Ithaca, New York,
+December 18, 1981.                                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000060                                              
+                                                                                
+                                                                                
+M0073V01BLANK-- This space is meant to be blank.                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M0074V00RESETCP-- This program when run as a CICS transaction on an OS/VS CICS  
+system will allow a terminal which has been 'DIALED' into the CICS virtual      
+machine to issue a reset CP command to release the terminal.  Requires a SVC to 
+issue a CP command from a user program.  Similar in  function to M0072V00 on the
+Release 5 Library except operates with  OS CICS rather than DOS.  Formerly      
+M2173V00 on Release 5.--Richard  Greenberg, American International Group, New   
+York, New York, April 16, 1980.                                                 
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000006                                              
+                                                                                
+                                                                                
+M0075V00RIFLEPRT-- A system of programs which allow a CMS user to direct his    
+virtual  printed output to MVS/JES2 for processing.  The code submitted contains
+references to Columbia standards and therefore is not directly usable.  It      
+should provide the necessary outline for tailoring it to a specific             
+installation.--Terry Baughman, Columbia Gas System Service Corp., Columbus,     
+Ohio, April 21, 1980.                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000037                                              
+                                                                                
+                                                                                
+M0076V00IMPROVE PAGING ON 2305-2'S AND 3330'S-- Updates and documentation are   
+for  Release 6 PLC 4.  Formerly M1104V00 on Release 5.--Romney White, University
+of Waterloo, Waterloo, Ontario, July 15, 1980.                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M0077V00PERMIT FIXED HEAD AREAS ON 3344'S AND 3350'S-- To be designated as      
+perferred  paging areas.  Updates and documentation are for Release 6 PLC 4.    
+Formerly  M1105V00 on Release 5.--Romney White, University of Waterloo,         
+Waterloo,  Ontario, July 16, 1980.                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000017                                              
+                                                                                
+                                                                                
+M0078V00SYSTEM LOG FACILITY-- This is a general purpose facility for the reading
+and writing of page size records within an area on a system owned volume        
+reserved for this purpose.  These records may be accessed by CP or via diagnose 
+from a virtual machine.  Records may be separated into groups  to serve         
+different purposes.  At the University of Waterloo this facility  is primarily  
+used for online accounting purposes.  CP updates their  documentation are for CP
+Release 6 PLC 4.  Documentation for Release 3 PLC 18  version is included as it 
+may contain extra information.  DMKUSO UW002DMK has  been changed to display    
+logoff messages even if a user is disconnected just  in case the console output 
+is being spooled.  Formerly M1106V02 on Release 5.--Romney White, University    
+of Waterloo, Waterloo, Ontario, July 17, 1980.                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000271                                              
+                                                                                
+                                                                                
+M0079V00EXECUTIL-- is a general purpose utility program useful in EXECs.  It can
+stack information about unused virtual addresses, unused disk mode  letters, CMS
+disks, CMS disk files, globaled library names, spooled  reader files, the CMS   
+console stack, and a line of miscellaneous items.  You can also read and write  
+disk files from an EXEC.  Documentation is  in a file called LISTING, and       
+installation instructions are in the file  XUTILGEN memo.  Currently requires   
+Release 6 BSEPP, but a modest effort  could remove BSEPP-dependent code.--Lew   
+Shephardson, University of   Waterloo, Waterloo, Ontario, August 8, 1980.       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000145                                              
+                                                                                
+                                                                                
+M0080V00LISTFILE-- This modification to CMS replaces the standard IBM LISTFILE  
+module and provides expanded capabilities.  (1)  File sorting - an indirect     
+radix sort is employed to sort files to provide more meaningful and usable      
+output.  Default sort is by filetype, filename.  Other sorts include creation   
+date, time, and block/record counts.  A descend option allows sorting in        
+descending order.  (2)  Prefix/suffix options allow user control of the  number 
+of EXEC argument tokens preceding and following the output to the  EXEC file    
+(CMS EXEC A1).  (3)  Generalized fileid specifications-  right-justified        
+comparisons are now included (e.g. *001 for all filenames/filetypes  ending in  
+001, A*E for all filenames/filetypes beginning with A and ending  in E).  (4)   
+Creation data selection allows specification of files created  within a range of
+dates.  Before, after, from, today, and through options  may be specified alone 
+or together.  STACK option added.  Modification is  release independent.        
+Formerly M0007V00 on Release 5.  This modification was written at and           
+submitted on behalf of The University of Maine.--Roger Hough, IBM Corp.,        
+Poughkeepsie, New York, August 13, 1980.                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000061                                              
+                                                                                
+                                                                                
+M0081V01PDISPLAY-- Is a CMS version of the POWER/VS PDISPLAY command.  It is to 
+display the POWER/VS queue data under CMS.  PDISPLAY is release independent.    
+Documentation is PDISPLAY SCRIPT.  Formerly M2175V01 on Release 5.--Elsie Yip,  
+Dominion Life Assurance Company, Waterloo, Ontario, February 24, 1981.          
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000040                                              
+                                                                                
+                                                                                
+M0082V00PLI/F-- This is the PLI/F compiler from OS Release 21.8 (PLI Version    
+5.5) which has been implemented under CMS.  Documentation for use of the        
+compiler is contained in 'PLICOMP MEMO'.--Bruce Marshall, Perkin-Elmer Corp.,   
+Danbury, Connecticut, August 14, 1980.                                          
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0001415                                              
+                                                                                
+                                                                                
+M1083V00RUNPARM-- Adapting programmes which expect OS style parm fields is      
+normally  difficult without a means of modifying CMS tokens to length+string    
+format.  RUNPARM will issue a LOAD SVC for a module loaded above RUNPARM in the 
+user  area.  Any tokens past the command name on the command line are condensed 
+and passed to the program as an OS parm field.  An option allows the COMPSWT    
+flag to be ON or OFF during execution.--Mike Ruwald, University of  Waterloo,   
+Waterloo, Ontario, August 21, 1980.                                             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000005                                              
+                                                                                
+                                                                                
+M1084V01AUXDIRT-- Establish and remove auxiliary disk directories from exec     
+files, programs etc. by this transient module.  The DMSFST entries are contained
+in a separate MODULE file and are independent of filemode so   that the disk    
+being extended need not be accessed at the same mode that  was specified on the 
+GENDIRT command.  A sample DIRT file is included.--Mike Ruwald, University of   
+Waterloo, Waterloo, Ontario, September 26,  1980.                               
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000007                                              
+                                                                                
+                                                                                
+M1085V00CLASSIFY-- A printed output classification facility that allows users to
+specify protective markings to be 'rubber stamped' at the top and bottom of     
+spool files directed to the real printer.  Users issue the CP CLASSIFY  command 
+to specify or query the classification or a virtual device or  spool file.--Dave
+Farnham, Central Intelligence Agency, Washington, D.C.,  August 28, 1980.       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000125                                              
+                                                                                
+                                                                                
+M1086V00CIA MODS-- Our local mods that have been contributed to the Waterloo VM 
+Library now consume more than a reel of tape.  Since our local  facilities tend 
+to be of interest to a relatively small number of  installations, we will merely
+place a notice of availability for mods  that have been updated to the current  
+level of VM/370.  RELEASE6 MEMO  describes our contributions and current level  
+of VM/370.  They include:  1) Batch Monitor Facility - A disconnected virtual   
+machine that monitors  and controls jobs submitted for processing on remote     
+batch systems.  Formerly M0081V00 on Release 5.  2)  PROC Structure Macros and  
+Library -  The PROC system is a set of several hundred assembly language macros 
+that perform a variety of functions, including subroutine linkage and storage   
+allocation.  Formerly M1112V00 on Release 5.  3) SEDIT - An  editor that is more
+powerful than EDIT yet less than XEDIT.  Formerly  M1113V00 on Release 5.  4)   
+TAPEMON - A disconnected service virtual  machine that processes user requests  
+for tape drives and volumes.  5)  CLASSIFY - A printed output classification    
+facility that allows users to  specify protective markings to be 'rubber        
+stamped' at the top and bottom  of spool files directed to the real printer.    
+This mod is M1085V00 on this  Release 6 Library.--David Farnham, Central        
+Intelligence Agency, ODP/SPD,  Washington, D.C.  20505, (703) 351-6078, August  
+27, 1980.                                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M1087V00LISTDS-- This modification to the IBM CMS LISTDS command vastly improves
+its performance by replacing the channel programs with more logical and         
+sophisticated channel programs.  The modification only addresses CKD type disk  
+drives with RPS.  In addition, this modification incorporates the  ability to   
+search by dsname roots and by pds member name roots as well as  an option to    
+output to the printer.  Release 6 PLC 11.--Jack Rose, GATX  Corporation,        
+Chicago, Illinois, October 23, 1980.                                            
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000013                                              
+                                                                                
+                                                                                
+M1088V00MVS under VM MODS-- Release 3.  Consists of modifications,              
+recommendations  and experiences of users who run MVS under VM.  The TAPE INDEX 
+file contains  information on how to contribute, how to obtain a copy of the    
+tape, summary  of changes etc.  Note that in the TAPE INDEX file, FILE 2        
+pertains to M1089V00  and FILE 3 pertains to M1090V00.--Peter Tittler, Avis Rent
+A Car, Garden City,  New York, November 5, 1980.                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000008                                              
+                                                                                
+                                                                                
+M1089V00AVIS RENT A CAR MVS UNDER VM MODS-- For a list of these mods, please see
+the TAPE INDEX file in M1088V00.--Peter Tittler, Avis Rent A Car, Garden City,  
+New York, November 5, 1980.                                                     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000239                                              
+                                                                                
+                                                                                
+M1090V00WESTERN AIRLINES MVS UNDER VM MODS-- Documentation for each mod is      
+supplied  in both 'SCRIPT' and 'DOCUMENT' files; the document files should be  
+printed  using either a TN train or the UPCASE option.  For a list of these     
+mods,  please see the M1090V00 DOCUMENT file.--Dwight Harm, Western Airlines,   
+Los Angeles, California, November 5, 1980.                                      
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000479                                              
+                                                                                
+                                                                                
+M1091V00SPACE VIRTUAL MACHINE-- this mod can be used to make directory updates  
+normally not allowed by DIRMAINT and to obtain temporary disk space that can be 
+used for about 24 hours.  Requires M1092V00, M1093V00 and M1094V00.  Please see 
+the document file for more information.--Dick Johnson, SLAC,  Menlo Park,       
+California, November 11, 1980.                                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M1092V00SPACE A-DISK-- to be used with M1091V00SPACE VIRTUAL MACHINE.--Dick     
+Johnson,  SLAC, Menlo Park, California, November 11, 1980.                      
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000064                                              
+                                                                                
+                                                                                
+M1093V00SPACE D-DISK-- to be used with M1091V00SPACE VIRTUAL MACHINE.--Dick     
+Johnson,  SLAC, Menlo Park, California, November 12, 1980.                      
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000104                                              
+                                                                                
+                                                                                
+M1094V00SPACE UTILITY MODULES AND EXECs-- to be used with M1091V00SPACE VIRTUAL 
+MACHINE.--Dick Johnson, SLAC, Menlo Park, California, November 12, 1980.        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000116                                              
+                                                                                
+                                                                                
+M1095V00VM ACCOUNT EXECS-- set of four execs developed for setting up new VM    
+accounts.  These execs work in conjunction with IBM's DIRMAINT program.--Lois   
+White,  SLAC, Stanford, California, November 14, 1980.                          
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000008                                              
+                                                                                
+                                                                                
+M1096V00RSCAN-- a virtual reader file display utility.--Ed Sterling,            
+Bell-Northern  Research, Ottawa, Ontario, November 20, 1980.                    
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000439                                              
+                                                                                
+                                                                                
+M1097V00OS/VMCF-- is an OS user interface to allow multiple OS application      
+programs  to concurrently use the facilities of the VM/370 VMCF facility.       
+Formerly  M2155V00 on Release 5.--Robert Young, Kansas State University,        
+Manhattan,  Kansas, November 25, 1980.                                          
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000043                                              
+                                                                                
+                                                                                
+M1098V00CP COMMAND FOR OS --This modification to OS Release 21.8 provides a CP  
+command  capability from any OS console and through the SVC 34 interface.       
+Formerly  M2157V00 on Release 5.--Robert Young, Kansas State University,        
+Manhattan,  Kansas, November 26, 1980.                                          
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000011                                              
+                                                                                
+                                                                                
+M1099V00KSU VM/370 MONITOR DATA REDUCTION-- This program, which is designed to  
+run  in an OS system, performs elementary data reduction on an output tape from 
+the VM/370 system monitor.  The data reduction is on a run-wide basis and is    
+based on the USER, PERFORM, SEEKS, and DASTAP monitor classes.  Formerly        
+M2158V00 on Release 5.--Robert Young, Kansas State University, Manhattan,       
+Kansas, November 26, 1980.                                                      
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000055                                              
+                                                                                
+                                                                                
+M1100V00OS IPLTXT CORE CLEAR REMOVAL-- This modification applied to the OS      
+IPLTXT  removes the core clearing performed during an OS IPL.  This helps reduce
+the paging load during an OS IPL and avoids unnecessarily allocating DASD page  
+slots for unused portions of an OS virtual machine.  Formerly M2161V00  on      
+Release 5.--Robert Young, Kansas State University, Manhattan, Kansas,  November 
+27, 1980.                                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000003                                              
+                                                                                
+                                                                                
+M1101V00REVISED IN-CORE JOB QUEUE-- This is a revision of modification          
+M0041V00JOBQUE  (from the Release 2 tape) to support both MFT and MVT and to    
+achieve OS  release-independence as well as sysgen-independence.  Also, the     
+modification  has been converted to support 3330's for job queue residence      
+rather than  2314's.  Formerly M2162V00 on Release 5.--Robert Young, Kansas     
+State University,  Manhattan, Kansas, November 27, 1980.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000011                                              
+                                                                                
+                                                                                
+M1102V00OS MINIDISK FIX-- This modification to OS corrects problems in OS DADSM 
+when using minidisks with non-zero relocations. Irregardless of what the  VM    
+manuals say, all OS and OS/VS systems can have problems with relocated          
+minidisks unless this fix is applied.  One track VTOCs do not always work as the
+manuals would lead you to believe (unless OS PTF US07288 is applied).  Formerly 
+M2163V00 on Release 5.--Robert Young, Kansas State University,  Manhattan,      
+Kansas, December 2, 1980.                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000020                                              
+                                                                                
+                                                                                
+M1103V00OS AND OS/VS SMF TIMING PROBLEMS UNDER VM/370-- This modification       
+corrects  CPU timing inaccuracies and inconsistencies which occur when running  
+OS  and OS/VS systems under VM/370 due to the infrequency of virtual interval   
+timer updates.  Formerly M2165V00 on Release 5.--Robert Young, Kansas State     
+University, Manhattan, Kansas, December 2, 1980.                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000106                                              
+                                                                                
+                                                                                
+M1104V00RSCS MODS-- These modifications are running under Release 6 PLC 11 with 
+BSEPP, however they will not be affected by the presence or absence of BSEPP or 
+SEPP on your system.  Mod BANCO1 represents a novel way to loosely  couple 2 or 
+more CPU's, one of which is running VM, using RSCS and the  DOS/VSE RJE         
+workstation program.  Mod BANCO2 allows an inbound punch file  from a non-VM    
+host to an RSCS remote to be spooled to the reader of a userid  on the VM       
+system, rather than go directly to the punch.  Mod MW007 is the  RSCS Data      
+Activity Collector written by Gabe Goldberg of MITRE Corporation,  with some    
+enhancements including support for intelligent remotes (DMTSML).--Garnet        
+MacPhee, Bancology Inc., El Paso, Texas, December 11, 1980.                     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000016                                              
+                                                                                
+                                                                                
+M1105V00EXTEND HELP FACILITY-- HELP will now automatically search for file      
+types HELPCP and HELPEXEC when the function is invoked. Release 6 PLC 11        
+SEPP 2.0 Source.--Mike Zozzaro, Prudential Insurance Company, Roseland,         
+New Jersey, December 12, 1980.                                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000017                                              
+                                                                                
+                                                                                
+M1106V00PRT328X-- A remote printer facility was required for small files to be  
+printed.  A program was set up to run as a virtual machine to which users could 
+pass files via spool commands.  The machine would then print these  files to a  
+328x device, account the user, and inform the user of completion.  A sensing of 
+printer conditions, interruptions, and hardware problems  cause appropriate     
+messages to be generated on the operators console.  NOTE:  This only works for  
+locally attached printers or systems with VM/SP.  Formerly M1131V00 on Release  
+5.--J. Nursey, Commercial Union Assurance Group,  Toronto, Ontario, January 14, 
+1981.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000040                                              
+                                                                                
+                                                                                
+M1107V01P-E TAPE COMMAND VM/SP VERSION-- Modifications to Perkin-Elmer's version
+of tape command for Release SP.  There is a new tape format consisting of an    
+embedded header and blocksize of 16005 for tape records (use of 'BLKSIZE' option
+allows user to specify blocksize up to 32005).  Also allows user to  write tapes
+in PLC format.  All IBM formats (old 800 byte and new 4096 byte  formats), old  
+PE format, and PLC tapes can be read, and they can be written  except for the   
+old PE format.  Also, the tape command will consist of two  modules.  For more  
+information about all the changes in the tape command see  the document         
+file.--Steve Bernstein, Perkin-Elmer Corporation, Danbury,  Connecticut, April  
+27, 1981.                                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000078                                              
+                                                                                
+                                                                                
+M1108V02EXECSERV-- CMS EXEC Services Program.  The EXECSERV program provides the
+CMS EXEC and EXEC2 facilities user with a variety of service functions not      
+otherwise available (or in some cases not as easily available).  Functions are  
+provided for the inquiry, and in carefully controlled instances the  alteration,
+of the status of the virtual machine, the real machine, data  residing in CMS   
+disk files, and data residing in CP spool files.  In  addition, functions are   
+available to receive, query, and wait for the  occurance of certain classes of  
+'events' which apply to the virtual machine  (such as the receipt of a reader   
+file, a VMCF transaction, and so on).  Documentation is available in various    
+forms; see the file M1108V02 DOCUMENT  for more information and for installation
+and usage notes.  Approximately  3600 1024-byte CMS blocks are required to load 
+the entire package.--Jerry  Metcoff, Northwest Industries, Inc., Chicago,       
+Illinois, May 25, 1982.                                                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0001013                                              
+                                                                                
+                                                                                
+M1109V01SORTF-- SORTF is a complete rewrite of the CMS SORT command.  It is much
+faster and allows descending as well as ascending sorts, and sorting of fixed or
+floating point and zoned or packed decimal numbers in addition to  character    
+strings.  Several virtual devices are supported for input and  output.  The     
+COBOL SORT verb and PL/1 PLISTRA calls are allowed.  In most  cases, files may  
+be RECFM V if desired.  SORTF may also be called as a   subroutine from any     
+FORTRAN, PL/1, COBOL, or ASSEMBLER program.  This  revision of sortf (version   
+2.1) will function using the extended file system  provided by CMS SEPP and     
+BSEPP.  It will not work on systems that do not  provide these facilities.      
+There is no longer a limit of 65,535 entries  in the input file to be sorted.   
+The size of sorted files will only be  limited by available memory and disk     
+storage.  Several errors from previous  versions of SORTF, relating to incorrect
+handling of variable length files  have been fixed.  There are still problems   
+with unit record I/O which have  not been corrected.  These features should be  
+avoided as they may not work  and may be unsupported in future releases.  This  
+version has not yet been tested in a production environment, so it should be    
+used cautiously at  first, until you can verify it is working correctly for your
+tasks.  Please  read the document 'SORTF CHANGES' before using SORTF and report 
+any problems  you may discover.  DOCUMENT and CHANGES files do not contain      
+carriage control  and should be printed on a TN train or UPCASE.  Installation  
+instructions are  on page 16 of the document.  Formerly M0027V00 on Release     
+5.--David Porter  and W. Hutchens, The MITRE Corporation, McLean, Virginia,     
+February 26, 1981.                                                              
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000174                                              
+                                                                                
+                                                                                
+M1110V00VMSEP-- This is a VS1 writer separator routine that for VS1 running     
+under  VM, will route VS1 sysouts almost anywhere in the system or around a     
+rscs-type network.  It is table driven keyed to the sysout class, and will      
+spool  to and tag to id's taken either from table entries or from subfields of  
+the jobcard accounting field.  Provision is made to also get the jobcard        
+programmer name field if desired, but this is not used in the implementation    
+as supplied.  No VM mods are required and as far as I know this is independent  
+of VM Release, SEPP, BSEPP, or VM/SP.  The only VS1 mods needed are to add a    
+type 1 SVC for CP commands (which you may already have), and a writer           
+catalogued procedure or two.  Documentation is a memo file, and listings of all 
+assemblies are supplied.  Most user customization will simply be to add/change  
+entries in the master table, which is a separate assembly.--Richard Greenberg,  
+Automatic Data Processing, New York, New York, January 28, 1981.                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000225                                              
+                                                                                
+                                                                                
+M1111V00PAGMOD-- Modifications to the VM/370 paging algorithms resulting in a   
+60% improvement in interactive response time.  These changes are at CP Release  
+6, PLC 4 level but probably can be adapted to BSEPP or VM/SP  systems without   
+major effort.  See the PAGMOD MEMO file for more information.--Walter Hutchens, 
+The MITRE Corporation, McLean, Virginia, March 6, 1981.                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000249                                              
+                                                                                
+                                                                                
+M1112V00VMACNT-- This VM/370 PL/1 accounting program (VMACNT PLIOPT) takes as   
+input, VM type 01, 02, 03, and 34 accounting records, 2 rate tables, and a list 
+of non-prime dates, all of which are CMS files, and produces an  itemized       
+accounting/billing statement of VM/370 usage and non-prime time,  totalled by   
+category and final, and states the billing date range.  The  statement is       
+comprised of totals for userids, totals for account, and  final totals.  Each   
+total mentioned is described by a one full-page  sub-statement.  A summary of   
+userid and account totals is printed at the  end of the statement.  Release     
+independent.--Stephen Nicely and Mario Levin, National Semiconductor Corp.,     
+Santa Clara, California, March 16, 1981.                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000081                                              
+                                                                                
+                                                                                
+M1113V00CALLDMS-- this program is an interface between the CMS EXEC processor   
+and  the Display Management System (Program Product Number 5748-XXB).           
+Predefined  panels may be formatted, displayed, and read in a manner similar to 
+the  standard DMS interface program, EUDCMSX. The major advantage of this       
+interface is that all communications occurs via  the console stack.  Hence, this
+program is both release independent and   EXEC processor independent (works     
+under either EXEC or EXEC-2).  Documentation  for CALLDMS has filetypes of      
+SCRIPT and HELPCMS.   Approximately 250  800-byte CMS blocks are required to    
+load this program.--Jerry Metcoff,  Northwest Industries, Inc., Chicago,        
+Illinois, March 18, 1981.                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000039                                              
+                                                                                
+                                                                                
+M1114V01MATCH-- The MATCH Program will compare two files and create a third file
+describing their differences.  In common use, an update stream is built by this 
+program from the comparison of a base (unmodified) file with a  modified version
+of the same file.  This update stream can later be used  to recreate the        
+modified file, given the base file.  The output produced  by MATCH is written   
+either as a series of control messages together with  the deleted and inserted  
+data records or as an update stream having the  form used by the CMS update     
+facility. Output may be written to a CMS  disk file, to the console, or to the  
+virtual printer.  Documentation for  MATCH has filetypes of SCRIPT and HELPCMS. 
+Approximately 750 800-byte  CMS blocks are required to load this program.--Jerry
+Metcoff, Northwest  Industries, Inc., Chicago, Illinois, December 10, 1981.     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000150                                              
+                                                                                
+                                                                                
+M1115V00BATCH MONITOR ENHANCEMENTS-- A series of updates and additions to allow 
+the BATCH MONITOR Program Product (5796-PGZ) to first function in a Release 6   
+PLC 15 SEPP environment and enhancements to 1)  remove the  restrictions on     
+number of lines or cards spooled to the user  (restricted mini-disk block       
+count), 2) allow variable ipl command,  3) provide better user's guide, 4) HELPS
+for all the commands required by  the system, 5) support userid and job name    
+suffix, 6) support 3278s and  7) logoff the worker machines between every job   
+(clears surreptitious  attaches).  Included are updates to the assembler source 
+as distributed  by IBM, replacement execs for those that were modified and      
+additional  execs and modules (with source) for extensions.  Also the raw       
+SCRIPT  (level 3.6) and listing files for the user's guide, HELP files and a    
+manual containing those HELPS in LISTING format (print with TN train). The      
+updates also include the modifications made by Michael G. Smith at  Hartford    
+Steam Boiler for changes from Release 3 to Release 6 of CP.  Number of 1K blocks
+required 1069.--Donald M. Smith, Goddard Modelling  and Simulation Facility,    
+Greenbelt, Maryland, March 19, 1981.                                            
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000381                                              
+                                                                                
+                                                                                
+M1116V00RSCS REMOTE COMMAND AUTHORIZATION-- this modification to the RSCS       
+Program  Product allows RSCS operator commands to be issued through the special 
+message facility by authorized users.  A user may also be restricted to issuing 
+commands for a specific link.  Authorized users may exist  locally or they may  
+exist somewhere out in the network.  The modification  is particularly useful   
+for supporting remote sites.--Paul Hart, AEL  Microtel Limited, Brockville,     
+Ontario, March 19, 1981.                                                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000013                                              
+                                                                                
+                                                                                
+M1117V00FULL SCREEN READER QUEUE LIST AND SCAN-- This set of EXECs and programs 
+gives the CMS user the facility to view a full screen list of his/her reader    
+files and to manipulate them from the list.  This facility requires  5785-HAA   
+(DIOF).  The modifications required to convert the BROWSE program  supplied with
+IPF to view reader files in place is also provided.--Paul  Hart, AEL Microtel   
+Limited, Brockville, Ontario, March 19, 1981.                                   
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000091                                              
+                                                                                
+                                                                                
+M1118V00NEWS-- The NEWS command is used to selectively type the contents of     
+'news' files.  The 'news' files may be maintained by systems administration or  
+individual users.  The NEWS command will 'remember' what news you have read and 
+will by default only type out new 'news'.--Lorne Connell, University  of        
+Waterloo, Waterloo, Ontario, March 19, 1981.                                    
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000029                                              
+                                                                                
+                                                                                
+M1119V00MTOR-- the MTOR (Message To Operator with Reply) is for user/operator   
+communication.  It is based on Pratt & Whitney's MOUNTCMD - M0049V00. The user  
+enters a request as he/she would a message to another user.  The  system sends  
+the text to the operator in a format similar to a message  and assigns a reply  
+id number to the request.  MTOR was installed on a  Release 6, PLC 11 SEPP      
+system.--Mike Cernak, Morton Norwich Products, Chicago, Illinois, April 8, 1981.
+                                                                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000020                                              
+                                                                                
+                                                                                
+M1120V00SCRIBE-- SCRIBE is a prototype of a 3277-based word processing system   
+making  use of the full-screen interface and program function keys.  It runs in 
+a  CMS environment and requires DMS/CMS Program Product.  Since it is a         
+prototype, documentation is minimal and there are bugs and missing pieces. This 
+code is provided to stimulate discussion and suggest possibilities;  it is not a
+practical working system.  Release 6, PLC4.--Walter Hutchens,  MITRE            
+Corporation, McLean, Virginia, April 9, 1981.                                   
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000261                                              
+                                                                                
+                                                                                
+M1121V00CUNYMODS FOR VM/SP-- A total of 17 CP/CMS mods are included.  The       
+DOCUMENT  file contains a brief description of each mod.--Henry Nussbacher, City
+University of New York, New York, New York, May 13, 1981.                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000107                                              
+                                                                                
+                                                                                
+M1122V02EXEC PROTECTOR-- CMS modifications to allow 'EXECUTE' only EXEC procs on
+R/O disks.  Prevents general users from copying, printing, or in any way        
+seeing execs that have a filemode number of 2 and are on read only disks.  Also 
+included are mods to LISTFILE command and FLIST to prevent those EXECs  from    
+even being known about.  This is a complete rewrite of M1130V00 of the  Release 
+5 VM Library.  It is more efficient and closes some loopholes in the  previous  
+method of protection.  For VM/SP 1.0 and 1.1 (could be adapted for  BSEPP with  
+some small changes).  The update accidentally dropped from   DMSINT is now      
+added.--Ron Rast, FB Consulting Services, Sacramento,  California, January 28,  
+1982.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000010                                              
+                                                                                
+                                                                                
+M1123V00EXECAIDS-- this is a group of simple CMS assembly language modules that 
+perform various functions for use in EXEC procs.  Included are: 1. RETRY-       
+rewrite a command on the console input line so you can correct a command and    
+re-enter it without re-typing it; 2. BRITE- display a line of text  in high     
+intensity (also allowing the display of strings longer than 8  chars); 3. QFILE-
+get various info on a CMS file (i.e. records, blocks,  lrecl, date, time, ...)  
+and stack it; 4. QPACK- check to see if a CMS  file is in packed format, and    
+exit with an appropriate return code; 5.  TAPECHK- get status of a tape drive   
+(not attached, not ready, ready -no ring,  ready -ring in); and more.  For VM/SP
+but with minor changes could be  adapted to Release 6 BSEPP.--Ron Rast, FB      
+Consulting Services, Sacramento,  California, May 14, 1981.                     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000033                                              
+                                                                                
+                                                                                
+M1124V00NORESTRT-- CP mod to prevent VM from auto restarting after an abend.    
+Dump will be taken, abend message displayed and then system will go into        
+disabled wait code=3.  This mod allows an orderly re-ipl under direct operator  
+supervision and also makes sure the operator knows that the  system has indeed  
+gone down.  Simple mod to DMKDMP - only 3 lines of code  inserted.  For VM/SP   
+1.0 + 1.1 (could be adapted for BSEPP with some small changes).--Ron Rast, FB   
+Consulting Services, Sacramento, Ca., May 14, 1981.                             
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M1125V00PLISEG-- PLISEG shares PLI optimizer resident and transient libraries.  
+There are no mods to CMS or to CP (except DMKSNT).  Some of the PLI/CMS task    
+force points are also answered.  Performance is substantially improved;  20-40% 
+is typical, 90% has been observed.  CPU, IO, module size, load and  genmod time 
+are all reduced.  This modification is based on work by Ed  Haines of Lincoln   
+Labs and the OS PLI Shared Library.--Dave Gomberg, UCSF,  San Francisco,        
+California, June 1, 1981.                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000181                                              
+                                                                                
+                                                                                
+M1126V01BLANK-- THIS SPACE IS MEANT TO BE BLANK.                                
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000002                                              
+                                                                                
+                                                                                
+M1127V01NWI-EXECAIDS-- EXEC writing and invocation aids.  This is a collection  
+of  programs which aid in the writing and invocation of CMS EXECs.  The CALLEXEC
+program invokes an EXEC as if it were a module and also provides a facility     
+for EXECUTE-ONLY EXECs.  The CMDPARSE program parses a command line for an      
+EXEC.  The EXECFILE program invokes an EXEC having an arbitrary filename,       
+filetype, and filemode.  The CMS/SP modification M1004NWS is provided to use    
+CALLEXEC and EXECFILE with the EXEC-1 language (no modifications are required   
+for use with EXEC-2).  Documentation for each of these programs has filetypes   
+of script and helpcms.  Approximately 350 1024-byte cms blocks are              
+required to load all of the programs.--Jerry Metcoff, Northwest Industries,     
+Inc., Chicago, Illinois, December 15, 1981.                                     
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000091                                              
+                                                                                
+                                                                                
+M1128V00MVSTIME-- CP and MVS mods to allow accurate job and step CPU times      
+running  MVS under VM.  This mod causes MVS to do timing via diagnose if running
+under  VM.  Two CP and six MVS modules are affected.  CP update at the VM/SP    
+1.03  level, MVS at 8008, requires 60 1024k byte blocks.--Jim Condon, Goddard   
+Space  Flight Center, Greenbelt, Maryland, June 9, 1981.                        
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000017                                              
+                                                                                
+                                                                                
+M1129V00READ MDISK FROM MVS-- this utility runs on MVS and reads a CMS file from
+a  VM volume that consists of 800-byte records or of 1K, 2K or 4K-byte records. 
+The output can be written to any sequential MVS data set.  This program is      
+release independent.  Formerly M0006V00 on Release 5.--Ray Larkin, Pratt &      
+Whitney Aircraft, East Hartford, Connecticut, June 15, 1981.                    
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000041                                              
+                                                                                
+                                                                                
+M1130V00OSSORT FOR CMS-- This modified OS/360 SORT is callable from Assembler,  
+from  COBOL or PL/I by the standard SORT verbs or as a standalone program.  It  
+provides all the types of field except binary.  Also included is a description  
+of how to modify PL/I OPTIMISER TXTLIB to allow it to use SORT  verb under CMS. 
+Release SP.  Formerly M0030V00 on Release 5 by Roger Evans of United Biscuits   
+Limited.--Mike Ruwald, University of Waterloo, Waterloo,Ontario, October 2,     
+1981.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000080                                              
+                                                                                
+                                                                                
+M1131V00RSCS NETWORKING REL 2 MOD-- This modification makes RSCS Rel. 2 punch   
+files  from an OS system without NJE to userid RSCSPOOL instead of the system   
+punch.  Also included is an exec and an assembler routine that run in  RSCSPOOL 
+and analyse the output from RSCS.  If the first user card contains  a card      
+USERID XXXX, RSCSPOOL punches the deck to userid XXXX.  The CMS part  is tested 
+on VM/SP put 8101.--Hans R. Deckers, Studiecentrum voor  Kernenergie, B2400 Mol,
+Belgium, October 9, 1981.                                                       
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000006                                              
+                                                                                
+                                                                                
+M1132V00GENNS-- simplifies the creation and maintenance of DMKSNT by            
+automatically  allocating DASD space from a previously defined area and by      
+automatically  relocating the page and segment references to a user-defined     
+origin.  Only  NAMESYS and NAME3800 are supported, all other macros are passed  
+thru to the  output (ASSEMBLE) file.--Dave Gomberg, University of California,   
+San  Francisco, California, December 15, 1981.                                  
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000056                                              
+                                                                                
+                                                                                
+M1133V00EDT-- To edit large files.--Michael Stark, Old Kent Bank, Grand Rapids, 
+Michigan, May 21, 1982.                                                         
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000006                                              
+                                                                                
+                                                                                
+M1134V00COMVME-- This mod will allow the running of a DOS/VSE console in DOC    
+display mode so that the terminal need not be attached to the virtual machine at
+all times.  These changes should be DOS/VSE Release 2 and  VM/370 Release 6     
+independent.--Michael Stark, Old Kent Bank, Grand Rapids,  Michigan, May 21,    
+1982.                                                                           
+                                                                                
+NUMBER OF BLOCKS REQUIRED: 0000006                                              
+                                                                                
+                                                                                
